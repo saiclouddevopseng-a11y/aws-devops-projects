@@ -1,21 +1,32 @@
-# AWS Cloud & DevOps Projects
+# Centralized File Sharing & Backup System (AWS)
 
-This repository contains hands-on AWS Cloud and DevOps projects demonstrating real-world implementations of cloud infrastructure, automation, CI/CD pipelines, and monitoring.
+## Project Overview
+Designed and implemented a centralized file sharing and backup solution using core AWS services.
+Multiple EC2 instances access a shared file system using Amazon EFS, with automated backups to Amazon S3.
 
-## Skills Covered
-- AWS: EC2, S3, Lambda, RDS, VPC, IAM, EFS, SNS, SQS, CloudWatch
-- DevOps: Jenkins, Git/GitHub, Docker, Kubernetes
-- Infrastructure as Code: Terraform, CloudFormation
-- Automation & Monitoring: Ansible, Bash, Prometheus, Grafana
+## AWS Services Used
+- Amazon EC2
+- Amazon EFS
+- Amazon S3
+- AWS IAM
+- Amazon CloudWatch
 
-## Projects
-- Automated File Upload Pipeline (S3 → Lambda → RDS → SNS)
-- Centralized File Sharing & Backup System (EC2 + EFS + S3)
-- CI/CD Pipeline using Jenkins
-- Docker & Kubernetes Deployments
-- Terraform Infrastructure Provisioning
+## Implementation Summary
+- Launched EC2 instances in the same VPC
+- Created and mounted Amazon EFS across multiple EC2 instances
+- Configured IAM roles for secure S3 access
+- Implemented automated file backup from EFS to S3 using Linux scripting
+- Monitored system health using CloudWatch
 
-## Purpose
-This repository is created as a professional portfolio for Cloud Engineer / DevOps Engineer roles.
+## Tools & Technologies
+- Linux (Shell scripting)
+- systemd
+- inotify
 
+## Outcome
+- Centralized and highly available shared storage
+- Automated and secure backup solution
+- Scalable architecture suitable for enterprise workloads
 
+## Documentation
+Detailed implementation steps are available in the attached project document.
